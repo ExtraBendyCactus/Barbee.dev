@@ -1,0 +1,178 @@
+
+
+/* https://coolors.co/181818-017092-00bef9-e8e6e3
+!* CSS HEX *!
+--eerie-black: #181818ff;
+--cerulean: #017092ff;
+--deep-sky-blue: #00bef9ff;
+--platinum: #e8e6e3ff;
+
+!* CSS HSL *!
+--eerie-black: hsla(0, 0%, 9%, 1);
+--cerulean: hsla(194, 99%, 29%, 1);
+--deep-sky-blue: hsla(194, 100%, 49%, 1);
+--platinum: hsla(36, 10%, 90%, 1);
+
+!* SCSS HEX *!
+$eerie-black: #181818ff;
+$cerulean: #017092ff;
+$deep-sky-blue: #00bef9ff;
+$platinum: #e8e6e3ff;
+
+!* SCSS HSL *!
+$eerie-black: hsla(0, 0%, 9%, 1);
+$cerulean: hsla(194, 99%, 29%, 1);
+$deep-sky-blue: hsla(194, 100%, 49%, 1);
+$platinum: hsla(36, 10%, 90%, 1);
+
+!* SCSS RGB *!
+$eerie-black: rgba(24, 24, 24, 1);
+$cerulean: rgba(1, 112, 146, 1);
+$deep-sky-blue: rgba(0, 190, 249, 1);
+$platinum: rgba(232, 230, 227, 1);
+
+!* SCSS Gradient *!
+$gradient-top: linear-gradient(0deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-right: linear-gradient(90deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-bottom: linear-gradient(180deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-left: linear-gradient(270deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-top-right: linear-gradient(45deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-bottom-right: linear-gradient(135deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-top-left: linear-gradient(225deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-bottom-left: linear-gradient(315deg, #181818ff, #017092ff, #00bef9ff, #e8e6e3ff);
+$gradient-radial: radial-gradient(#181818ff, #017092ff, #00bef9ff, #e8e6e3ff);*/
+
+
+
+body {
+  background-color: #181818;
+  color: #e8e6e3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-container {
+  overflow: auto;
+  max-width: 550px;
+  padding: 10% 5px;
+}
+.headshot {
+  border: 2px solid #017092;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.headshot:hover {
+  border: 2px solid #00bef9;
+}
+
+h4:hover {
+  #location-icon {
+    filter: invert(53%) sepia(31%) saturate(4067%) hue-rotate(160deg) brightness(106%) contrast(99%);
+  }
+}
+
+.social-pane {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-pane:hover {
+}
+
+.social-icon { /* SVG icon color = #017092 */
+  filter: invert(24%) sepia(58%) saturate(2588%) hue-rotate(171deg) brightness(98%) contrast(99%);
+}
+
+.social-icon:hover { /* Change color to #00bef9 */
+  filter: invert(53%) sepia(31%) saturate(4067%) hue-rotate(160deg) brightness(106%) contrast(99%);
+}
+
+a {
+color: #017092
+}
+
+a:hover {
+  color: #00bef9;
+}
+
+
+
+#resume-body {
+  background-color: #181818;
+  color: #e8e6e3;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+}
+
+.main-resume-container {
+  overflow: auto;
+  padding: 25px 5px;
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#resume-contact {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #017092;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.resume-contact-icon { /* SVG icon color = #017092 */
+  filter: invert(24%) sepia(58%) saturate(2588%) hue-rotate(171deg) brightness(98%) contrast(99%);
+  transform: translateY(30%);
+}
+
+.resume-contact-icon:hover { /* Change color to #00bef9 */
+  filter: invert(53%) sepia(31%) saturate(4067%) hue-rotate(160deg) brightness(106%) contrast(99%);
+}
+
+section {
+  margin-top: 50px;
+  text-align: start;
+}
+
+.resume-header {
+  color: #017092;
+  padding: 0 0 0 20px;
+}
+
+.resume-h1 {
+  border: solid 2px #017092;
+}
+
+section:hover { /* You can nest CSS classes! */
+  .resume-header {
+    color: #00bef9;
+  }
+  .resume-h1 {
+    border: solid 2px #00bef9;
+  }
+}
+
+.resume-h3, .resume-h4 {
+  line-height: 1px;
+}
+
+.resume-h4 {
+  font-style: italic;
+  transform: translateY(-80%);
+}
+
+#resume-skills:hover {
+  .skills-icons {
+    filter: invert(53%) sepia(31%) saturate(4067%) hue-rotate(160deg) brightness(106%) contrast(99%);
+  }
+}
+
+.skills-icons {
+  filter: invert(24%) sepia(58%) saturate(2588%) hue-rotate(171deg) brightness(98%) contrast(99%);
+}
+
