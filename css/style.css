@@ -1,6 +1,6 @@
 
 
-/* https://coolors.co/181818-017092-00bef9-e8e6e3
+/* Found this at https://coolors.co/181818-017092-00bef9-e8e6e3 after I manually did all of the colors
 !* CSS HEX *!
 --eerie-black: #181818ff;
 --cerulean: #017092ff;
@@ -57,6 +57,7 @@ body {
   max-width: 550px;
   padding: 10% 5px;
 }
+
 .headshot {
   border: 2px solid #017092;
   border-radius: 50%;
@@ -97,8 +98,6 @@ color: #017092
 a:hover {
   color: #00bef9;
 }
-
-
 
 #resume-body {
   background-color: #181818;
@@ -172,7 +171,8 @@ section:hover { /* You can nest CSS classes! */
   }
 }
 
-.skills-icons {
+.skills-icons { /* SVG icon color = #017092 */
   filter: invert(24%) sepia(58%) saturate(2588%) hue-rotate(171deg) brightness(98%) contrast(99%);
+  padding: 0 0 0 20px;
 }
 
