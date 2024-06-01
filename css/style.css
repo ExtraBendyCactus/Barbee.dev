@@ -78,6 +78,9 @@ h4:hover {
 .social-pane {
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid #017092;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .social-pane:hover {
@@ -98,6 +101,24 @@ color: #017092
 a:hover {
   color: #00bef9;
 }
+
+#recent-posts {
+  a:link, a:visited {
+    text-decoration: none;
+    color: #017092;
+  }
+
+  a:hover {
+    color: #00bef9;
+  }
+}
+
+.post-date {
+  margin-top: -20px;
+}
+
+
+
 
 #resume-body {
   background-color: #181818;
